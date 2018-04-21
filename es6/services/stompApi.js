@@ -1,4 +1,4 @@
-let stompClient
+let stompClient;
 
 const stompConnect = (url,callback) => {
   stompClient = Stomp.client(url);

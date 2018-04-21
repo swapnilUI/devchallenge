@@ -1,44 +1,42 @@
-function computeRowHtml(rowData) {
-	const name = `<td>${rowData.name}</td>`;
-	const bestBid = `<td>${rowData.bestBid}</td>`;
-	const bestAsk = `<td>${rowData.bestAsk}</td>`;
-	const lastChangeBid = `<td>${rowData.lastChangeBid}</td>`;
-	const lastChangeAsk = `<td>${rowData.lastChangeAsk}</td>`;
-	const midPrice = `<td id="${rowData.name}"></td>`;
-
-	return `<tr>${name}${bestBid}${bestAsk}${lastChangeBid}${lastChangeAsk}${midPrice}</tr>`;
+const createRows = (rowData) => {
+	return `<tr><td>${rowData.name}</td>
+          <td>${rowData.bestBid}</td>
+          <td>${rowData.bestAsk}</td>
+          <td>${rowData.lastChangeBid}</td>
+          <td>${rowData.lastChangeAsk}</td>
+          <td id="${rowData.name}"></td></tr>`;
 }
 
-function computeTableHtml(data) {
+const tableRows = (data) => {
 	let html = '';
 
 	data.forEach((item) => {
-		html += computeRowHtml(item);
+		html += createRows(item);
 	});
 
 	return html;
 }
 
-function createGraph(id, list) {
+const createSparkLine = (id, list) => {
 	window.Sparkline.draw(document.getElementById(id), list);
 }
 
-function createTableGraphs(list) {
-	list.forEach((item) => {
-		createGraph(item.name, item.midPriceList.map((midPriceItem) => midPriceItem.value));
+const insertSparkline = (data) => {
+	data.forEach((item) => {
+		createSparkLine(item.name, item.midPrices.map((price) => price.value));
 	});
 }
 
-function render(el, data) {
-	el.innerHTML = computeTableHtml(data);
-	//createTableGraphs(data);
+const render = (el, data) => {
+	el.innerHTML = tableRows(data);
+	insertSparkline(data);
 }
 
 export default function (container) {
-	const table = document.createElement('table');
-	container.appendChild(table);
+	const tbody = document.createElement('tbody');
+	container.appendChild(tbody);
 
 	return {
-		renderTable: (data) => render(table, data)
+		renderTable: (data) => render(tbody, data)
 	};
 }
