@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      "blackcatmq",
+      "/Users/ileyada/dev/wpx/crazytable"
+    ]
+  ],
+  "_from": "blackcatmq@latest",
+  "_id": "blackcatmq@0.0.10",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/blackcatmq",
+  "_nodeVersion": "0.12.4",
+  "_npmUser": {
+    "email": "yaroslav.gaponov@gmail.com",
+    "name": "yaroslavgaponov"
+  },
+  "_npmVersion": "2.10.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "blackcatmq",
+    "raw": "blackcatmq",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/blackcatmq/-/blackcatmq-0.0.10.tgz",
+  "_shasum": "2693785692e7b0817ca6a77cf7761c4ace77a047",
+  "_shrinkwrap": null,
+  "_spec": "blackcatmq",
+  "_where": "/Users/ileyada/dev/wpx/crazytable",
+  "author": {
+    "email": "yaroslav.gaponov@gmail.com",
+    "name": "Yaroslav Gaponov"
+  },
+  "bugs": {
+    "url": "https://github.com/YaroslavGaponov/blackcatmq/issues"
+  },
+  "dependencies": {
+    "ldapauth": ">=2.1.1"
+  },
+  "description": "simple STOMP messages broker (aka STOMP server) in node.js",
+  "devDependencies": {
+    "stomp": "^0.1.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dist": {
+    "shasum": "2693785692e7b0817ca6a77cf7761c4ace77a047",
+    "tarball": "https://registry.npmjs.org/blackcatmq/-/blackcatmq-0.0.10.tgz"
+  },
+  "engines": {
+    "node": ">=0.8.7"
+  },
+  "gitHead": "f41cc692f0e5726d0d43762dab400f1c9a18f7e9",
+  "homepage": "https://github.com/YaroslavGaponov/blackcatmq",
+  "keywords": [
+    "STOMP",
+    "messages",
+    "broker",
+    "server",
+    "demon"
+  ],
+  "license": "BSD",
+  "main": "blackcatmq.js",
+  "maintainers": [
+    {
+      "email": "yaroslav.gaponov@gmail.com",
+      "name": "yaroslavgaponov"
+    }
+  ],
+  "name": "blackcatmq",
+  "optionalDependencies": {
+    "ldapauth": ">=2.1.1"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/YaroslavGaponov/blackcatmq.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.10"
+}

@@ -1,0 +1,17 @@
+logs
+.idea
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.lock-wscript
+build/Release
+node_modules
+jspm_packages
+.npm
+.node_repl_history
+bundle.js
+.DS_Store

@@ -1,0 +1,18 @@
+{
+  "extends": "airbnb",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+    },
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "semi": "off",
+    "eol-last": "off",
+    "comma-dangle": "off"
+  }
+}
